@@ -1,0 +1,94 @@
+<html>
+<head>
+  <title>NewJeans Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="w3.css">
+</head>
+<body>
+<div class="w3-container">
+  <img src="foto/NJheader.jpg" alt="header" style="height: 50%;width: 100%;">
+</div>
+<div class="w3-bar w3-pale-red">
+  <button class="w3-bar-item w3-button" onclick="Menu('Home')">Home</button>
+  <button class="w3-bar-item w3-button" onclick="Menu('NJ')">NewJeans</button>
+  <button class="w3-bar-item w3-button" onclick="Menu('Minji')">Minji</button>
+  <button class="w3-bar-item w3-button" onclick="Menu('Hanni')">Hanni</button>
+  <button class="w3-bar-item w3-button" onclick="Menu('Danielle')">Danielle</button>
+  <button class="w3-bar-item w3-button" onclick="Menu('Haerin')">Haerin</button>
+  <button class="w3-bar-item w3-button" onclick="Menu('Hyein')">Hyein</button>    
+</div>
+<div id="Home" class="w3-container char">
+  <center>
+  <h2>Welcome To NewJeans Page!</h2>
+  @cheryljessica
+</div>
+<div id="NJ" class="w3-container char w3-animate-opacity" style="display:none">
+  <h2>NewJeans</h2>
+  <table>
+  <tr><td><img src="foto/foto-NJ.jpg" width=500 height=325>
+      <td>NewJeans adalah <i>girl grup</i> asal korea yang beranggotakan lima orang, yaitu Minji, Hanni, Danielle, 
+	      Haerin, dan Hyein.
+  </table>
+</div>
+<div id="Minji" class="w3-container char w3-animate-opacity" style="display:none">
+  <h2>Minji</h2>
+  <table>
+  <tr><td rowspan=5><img src="foto/foto-minji.jpg" width=300 height=300">
+      <td>Nama Lengkap : Kim Minji
+  <tr><td>Tanggal Lahir : 7 Mei 2004
+  <tr><td>Zodiak : Taurus
+  <tr><td>Tinggi : 169 cm
+  </table>
+</div>
+<div id="Hanni" class="w3-container char w3-animate-opacity" style="display:none">
+  <h2>Hanni</h2>
+  <table>
+  <tr><td rowspan=5><img src="foto/foto-hanni.jpg" width=300 height=300">
+      <td>Nama Lengkap : Phạm Ngọc Hân / Hanni Pham
+  <tr><td>Tanggal Lahir : 6 Oktober 2004
+  <tr><td>Zodiak : Libra
+  <tr><td>Tinggi : 161,7 cm
+  </table>
+</div>
+<div id="Danielle" class="w3-container char w3-animate-opacity" style="display:none">
+  <h2>Danielle</h2>
+  <table>
+  <tr><td rowspan=5><img src="foto/foto-danielle.jpg" width=300 height=300">
+      <td>Nama Lengkap : Danielle Marsh / Mo Jihye
+  <tr><td>Tanggal Lahir : 11 April 2005
+  <tr><td>Zodiak : Aries
+  <tr><td>Tinggi : 165 cm
+  </table>
+</div>
+<div id="Haerin" class="w3-container char w3-animate-opacity" style="display:none">
+  <h2>Haerin</h2>
+  <table>
+  <tr><td rowspan=5><img src="foto/foto-haerin.jpg" width=300 height=300">
+      <td>Nama Lengkap : Kang Haerin
+  <tr><td>Tanggal Lahir : 15 Mei 2006
+  <tr><td>Zodiak : Taurus
+  <tr><td>Tinggi : 164,5 cm
+  </table>
+</div>
+<div id="Hyein" class="w3-container char w3-animate-opacity" style="display:none">
+  <h2>Hyein</h2>
+  <table>
+  <tr><td rowspan=5><img src="foto/foto-hyein.jpg" width=300 height=300">
+      <td>Nama Lengkap : Lee Hyein
+  <tr><td>Tanggal Lahir : 21 April 2008
+  <tr><td>Zodiak : Taurus
+  <tr><td>Tinggi : 170 cm
+  </table>
+</div>
+<script>
+  function Menu(Karakter) {
+    var i;
+    var x = document.getElementsByClassName("char");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(Karakter).style.display = "block";
+  }
+</script>
+</body>
+</html>
